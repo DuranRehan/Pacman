@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'pacMan-Font';
+    src: url(../ressources/font/crackman.ttf);
+}
+:root {
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'pacMan-Font';
+}

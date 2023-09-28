@@ -1,0 +1,151 @@
+/*Css relative to game board*/
+#borderBoard {
+    border: solid  blue ;
+    margin: 0px;
+    padding: 10px;
+    display: grid;
+    grid-template-areas: 
+    "score"
+    "body"
+    "life";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    font-size: 1.5em;
+    width: 450px;
+    left: 30%;
+    position: relative;
+}
+
+/*Css relative to Score Frame*/
+#scoreFrame {
+    grid-area: score;
+    border: solid 2px blue; 
+    margin: 1px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#highscore {
+    margin: 0px;
+    font-size: 1.5em;
+}
+#scored {
+    text-align: left;
+    margin: 5px;
+    font-size: 1em;
+    padding-left: 10%;
+}
+
+/*Css relative to Body of the game*/
+#bodyGame {
+    grid-area: body;
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    justify-self: center;
+    margin: 0px;
+    padding: 0px;
+    width: 420px;
+    height: 465px;
+}
+
+#start,#reset {
+    font-family: 'pacMan-Font';
+    background-color: rgb(241, 110, 63);
+    border: solid 5px orangered;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 2em;
+    width: 250px;
+
+}
+
+#start:hover,#reset:hover {
+    font-size: 1.9em;  
+    background-color: rgb(253, 185, 57); 
+}
+
+.wall {
+    border: solid 8px blue;
+    border-radius: 5%;
+    margin: 0px;
+}
+
+.pac-dot {
+    background-color: greenyellow;
+    width: 5px;
+    height: 5px;
+    margin: 5px;
+}
+
+.sup_pac-dot {
+    border-radius: 50%;
+    background-color: yellowgreen;
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+}
+
+.pacman {
+    background-color: yellow;
+    width: 15px;
+    height: 15px;
+    margin: 0px;
+    border-radius: 50%;
+}
+
+.ghost {
+    margin: 0px;
+    border-radius: 20%;
+}
+
+#Blinky{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+
+}
+
+#Pinky{
+    width: 15px;
+    height: 15px;
+    background-color: pink;
+}
+
+#Inky{
+    width: 15px;
+    height: 15px;
+    background-color: cyan;
+}
+
+#Clyde{
+    width: 15px;
+    height: 15px;
+    background-color: orange;
+}
+
+#lvlMax {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+/*Css relative to life frame*/
+#frameLife {
+    grid-area: life;
+    border: solid 2px blue;
+    border-radius: 20px;
+    margin-top: 10px;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    
+}
+
+.life {
+    display: inline-block;
+    border: solid 10px yellow;
+    border-radius: 90%;
+    margin: 5px;
+}

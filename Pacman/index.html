@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ESI, g56055,Projet-Webg2">
+    <meta name="author" content="Duran Rehan 56055">
+    <meta name="description" content="Ce site est un projet réalisé pour le cours WebG2 : Pacman">
+    <link rel="icon" href="./ressources/icone/pacman.ico">
+    <link rel="stylesheet" href="./style/global.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/maze.js"></script>
+    <script src="./js/mazeBuilder.js"></script>
+    <script src="./js/model/component.js"></script>
+    <script src="./js/model/tile.js"></script>
+    <script src="./js/model/dot.js"></script>
+    <script src="./js/model/wall.js"></script>
+    <script src="./js/model/position.js"></script>
+    <script src="./js/model/layer.js"></script>
+    <script src="./js/model/maze.js"></script>
+    <script src="./js/model/game.js"></script>
+    <script src="./js/model/direction.js"></script>
+    <script src="./js/model/sprite.js"></script>
+    <script src="./js/model/pacman.js"></script>
+    <script src="./js/model/ghost.js"></script>
+    <script src="./js/view/gameView.js"></script>
+    <script src="./js/controller/gameCtrl.js"></script>
+    <script src="./js/controller/pacmanCtrl.js"></script>
+    <script src="./js/view/pacmanView.js"></script>
+    <script src="./js/constFiles.js"></script>
+    <title>Pacman Project</title>
+</head>
+
+<body>
+    <main>
+        <div id="borderBoard">
+            <div id="scoreFrame">
+                <div id="highscore">
+                    High Score
+                    <div id="maxScored">
+                        0
+                    </div>
+                </div>
+                <div id="scored">
+                    0
+                </div>
+            </div>
+            <div id="bodyGame">
+                <script>
+                    $(document).ready(function () {
+                        let game = new GameCtrl();
+                        $("#start").click(function () {
+                            game.view.startGame();
+                        })
+                        $("#reset").click(function () {
+                            window.location.reload();
+                        })
+                    });
+
+                </script>
+            </div>
+            <div id="frameLife">
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

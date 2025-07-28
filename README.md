@@ -1,23 +1,42 @@
-# Pacman Game
+# 🟡 Pacman
 
-This is a simple [Pac-Man](https://en.wikipedia.org/wiki/Pac-Man) game built using JavaScript and HTML/CSS. 
+This project is a basic implementation of the classic arcade game **Pacman**, developed using pure JavaScript with an object-oriented approach and the **Model-View-Controller (MVC)** design pattern. It was created as part of my **first academic programming project** to practice JavaScript fundamentals and design patterns.
 
-## Getting Started
+> ⚠️ **Disclaimer**: This project was built early in my learning journey. It is a simple version aimed at practicing core concepts and does **not reflect my current skill level**.
 
-To get started with the game, simply open the `index.html` file in your web browser.
+---
 
-## How to Play
+## 🎯 Game Overview
 
-Use the arrow keys on your keyboard to move Pacman around the board. The goal is to eat all of the dots without getting caught by the ghosts. If Pacman runs into a ghost, he loses a life. The game is over when Pacman loses all of his lives.
+Pacman is a maze-chase game where the player controls Pacman to eat all dots in the maze while avoiding ghosts. The objective is to clear the maze without being caught.
 
-## Technologies Used
+---
 
-This game was built using the following technologies:
+## 🕹️ Features
+
+- Implemented using pure JavaScript (no frameworks)
+- Object-oriented design
+- MVC architecture separating game logic, UI rendering, and user input
+- Simple keyboard controls for player movement
+- Basic ghost AI
+
+---
+
+## 🛠️ Technologies Used
 
 - JavaScript
-- HTML
-- CSS
+- HTML5 and CSS3
+- MVC design pattern for clean code organization
+- No external libraries or frameworks
 
-## License & copyright
+---
 
-© Duran Rehan 56055, HE2B - ESI
+## ▶️ How to Run
+
+### Requirements:
+- Any modern web browser
+
+### Steps:
+- Clone the repository
+- Open `index.html` in your browser
+- Use keyboard arrows or WASD keys to control Pacman
